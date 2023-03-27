@@ -1,0 +1,66 @@
+<section class="request">
+  <div class="container">
+    <h2 class="request__title">Отправьте заявку</h2>
+
+    <form class="request__form form-submit">
+      <div class="form-submit__groups">
+        <label class="form-submit__group">
+          <input
+            class="form-submit__input"
+            type="text"
+            placeholder="Полное ФИО"
+          />
+        </label>
+        <label class="form-submit__group">
+          <input class="form-submit__input" type="email" placeholder="E-mail" />
+        </label>
+      </div>
+      <div class="form-submit__groups">
+        <label class="form-submit__group">
+          <input class="form-submit__input" type="text" placeholder="Страна" />
+        </label>
+        <label class="form-submit__group">
+          <input class="form-submit__input" type="text" placeholder="Город" />
+        </label>
+      </div>
+      <div class="form-submit__inner">
+        <span>В каком направлении хотите стать автором </span>
+        <div class="form-submit__checkboxes">
+          <label class="checkbox">
+            <input class="checkbox__input" type="checkbox" required />
+            <span class="checkbox__box"></span>
+            <span class="checkbox__text"> Видео </span>
+          </label>
+          <label class="checkbox">
+            <input class="checkbox__input" type="checkbox" required />
+            <span class="checkbox__box"></span>
+            <span class="checkbox__text"> Фото </span>
+          </label>
+          <label class="checkbox">
+            <input class="checkbox__input" type="checkbox" required />
+            <span class="checkbox__box"></span>
+            <span class="checkbox__text"> Музыка </span>
+          </label>
+        </div>
+      </div>
+      <label class="form-submit__group">
+        <input
+          class="form-submit__input"
+          type="text"
+          placeholder="Ссылка на портфолио"
+        />
+      </label>
+
+      <label class="checkbox">
+        <input class="checkbox__input" type="checkbox" required />
+        <span class="checkbox__box"></span>
+        <span class="checkbox__text">
+          Принимаю <a href="#">правила сайта</a> и соглашаюсь с
+          <a href="#">политикой конфиденциальности</a>
+        </span>
+      </label>
+
+      <button class="form-submit__btn btn" type="submit">Отправить</button>
+    </form>
+  </div>
+</section>

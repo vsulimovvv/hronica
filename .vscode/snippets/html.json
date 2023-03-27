@@ -1,0 +1,100 @@
+{
+  "svguse": {
+    "scope": "html",
+    "prefix": "g-use",
+    "body": [
+      "<svg>",
+      "  <use xlink:href=\"img/sprite.svg#$2\"></use>",
+      "</svg>"
+    ],
+    "description": "Snippet for use svg sprites"
+  },
+  "checkbox": {
+    "scope": "html",
+    "prefix": "g-checkbox",
+    "body": [
+      "<label class=\"custom-checkbox\">",
+      "  <input type=\"checkbox\" class=\"custom-checkbox__field\">",
+      "  <span class=\"custom-checkbox__content\">$1</span>",
+      "</label>"
+    ],
+    "description": "Snippet for custom checkbox"
+  },
+  "navigation": {
+    "scope": "html",
+    "prefix": "g-menu",
+    "body": [
+      "<nav class=\"nenu\">",
+      "  <ul class=\"nenu__list\">",
+      "    <li class=\"nenu__item\"><a class=\"nenu__link\" href=\"#\"></a></li>",
+      "    <li class=\"nenu__item\"><a class=\"nenu__link\" href=\"#\"></a></li>",
+      "    <li class=\"nenu__item\"><a class=\"nenu__link\" href=\"#\"></a></li>",
+      "  </ul>",
+      "</nav>"
+    ],
+    "description": "Snippet for navigation"
+  },
+  "social": {
+    "scope": "html",
+    "prefix": "g-social",
+    "body": [
+      "<ul class=\"social\" title=\"$1\">",
+      "  <li class=\"social__item\"><a class=\"social__link social__link--fb\" href=\"#\" target=\"_blank\" aria-label=\"Наша страничка в Фейсбуке\"></a></li>",
+      "  <li class=\"social__item\"><a class=\"social__link social__link--vk\" href=\"#\" target=\"_blank\" aria-label=\"Наша страничка в Вконтакте\"></a></li>",
+      "</ul>"
+    ],
+    "description": "Snippet for social links"
+  },
+  "basicform": {
+    "prefix": "g-form",
+    "body": [
+      "<form action=\"#\" class=\"form\">",
+      "  <label class=\"form__label\">",
+      "    <input class=\"input-reset form__input\" type=\"text\" name=\"Имя\"  placeholder=\"Имя\">",
+      "  </label>",
+      "  <button class=\"form__btn btn\">Отправить</button>",
+      "</form>"
+    ],
+    "description": "Snippet for basic form"
+  },
+  "basicswiper": {
+    "prefix": "g-swiper",
+    "body": [
+      "<div class=\"swiper $1\">",
+      "  <ul class=\"swiper-wrapper\">",
+      "     <li class=\"swiper-slide\">",
+      "     </li>",
+      "  </ul>",
+      "</div>"
+    ],
+    "description": "Snippet for basic swiper structure"
+  },
+  "picture": {
+    "prefix": "g-picture",
+    "body": [
+      "<picture>",
+      "  <source srcset=\"$1.webp\" type=\"image/webp\">",
+      "  <img src=\"$1.$2\" alt=\"$3\">",
+      "</picture>"
+    ],
+    "description": "Snippet for basic logo structure"
+  },
+  "tabs html sctructure": {
+    "prefix": "g-tabs",
+    "body": [
+      "<div class=\"tabs\" data-tabs=\"$1\">",
+      "  <ul class=\"tabs__nav\">",
+      "    <li class=\"tabs__nav-item\"><button class=\"tabs__nav-btn\" type=\"button\">$2</button></li>",
+      "    <li class=\"tabs__nav-item\"><button class=\"tabs__nav-btn\" type=\"button\">$3</button></li>",
+      "    <li class=\"tabs__nav-item\"><button class=\"tabs__nav-btn\" type=\"button\">$4</button></li>",
+      "  </ul>",
+      "  <div class=\"tabs__content\">",
+      "    <div class=\"tabs__panel\">$5</div>",
+      "    <div class=\"tabs__panel\">$6</div>",
+      "    <div class=\"tabs__panel\">$7</div>",
+      "  </div>",
+      "</div>"
+    ],
+    "description": "Snippet for basic tabs structure"
+  }
+}

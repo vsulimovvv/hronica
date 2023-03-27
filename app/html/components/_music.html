@@ -1,0 +1,1014 @@
+<section class="music">
+  <div class="container">
+    <div class="music__wrapper">
+      <div class="music__top music-filter">
+        <ul class="music-filter__list">
+          <li class="music-filter__item">
+            Жанр
+
+            <svg>
+              <use xlink:href="img/sprite.svg#chevron"></use>
+            </svg>
+
+            <div class="select-dropdown">
+              <div class="select-dropdown__inner">
+                <label class="checkbox">
+                  <input
+                    class="checkbox__input"
+                    type="radio"
+                    name="жанр"
+                    checked
+                  />
+                  <span class="checkbox__box"></span>
+                  <span class="checkbox__text"> Рок </span>
+                </label>
+                <label class="checkbox">
+                  <input
+                    class="checkbox__input"
+                    type="radio"
+                    name="жанр"
+                    checked
+                  />
+                  <span class="checkbox__box"></span>
+                  <span class="checkbox__text"> Фанк-рок </span>
+                </label>
+                <label class="checkbox">
+                  <input class="checkbox__input" type="radio" name="жанр" />
+                  <span class="checkbox__box"></span>
+                  <span class="checkbox__text"> Хард-рок </span>
+                </label>
+                <label class="checkbox">
+                  <input class="checkbox__input" type="radio" name="жанр" />
+                  <span class="checkbox__box"></span>
+                  <span class="checkbox__text"> Хэви-метал </span>
+                </label>
+                <label class="checkbox">
+                  <input class="checkbox__input" type="radio" name="жанр" />
+                  <span class="checkbox__box"></span>
+                  <span class="checkbox__text"> Нью-метал </span>
+                </label>
+                <label class="checkbox">
+                  <input class="checkbox__input" type="radio" name="жанр" />
+                  <span class="checkbox__box"></span>
+                  <span class="checkbox__text"> Альтернативный-метал </span>
+                </label>
+              </div>
+            </div>
+          </li>
+          <li class="music-filter__item">
+            Настроение
+
+            <svg>
+              <use xlink:href="img/sprite.svg#chevron"></use>
+            </svg>
+
+            <div class="select-dropdown">
+              <div class="select-dropdown__inner">
+                <label class="checkbox">
+                  <input
+                    class="checkbox__input"
+                    type="radio"
+                    name="соотношение"
+                    checked
+                  />
+                  <span class="checkbox__box"></span>
+                  <span class="checkbox__text"> По-умолчанию </span>
+                </label>
+                <label class="checkbox">
+                  <input
+                    class="checkbox__input"
+                    type="radio"
+                    name="соотношение"
+                  />
+                  <span class="checkbox__box"></span>
+                  <span class="checkbox__text"> По-умолчанию </span>
+                </label>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="music__accordions">
+        <div class="filter-accordion accordion">
+          <button
+            class="filter-accordion__control accordion-control-btn"
+            type="button"
+          >
+            Жанр
+
+            <svg>
+              <use xlink:href="img/sprite.svg#chevron"></use>
+            </svg>
+          </button>
+
+          <div class="filter-accordion__content accordion-content">
+            <div class="filter-accordion__inner">
+              <label class="checkbox">
+                <input
+                  class="checkbox__input"
+                  type="radio"
+                  name="жанр"
+                  checked
+                />
+                <span class="checkbox__box"></span>
+                <span class="checkbox__text"> Рок </span>
+              </label>
+              <label class="checkbox">
+                <input
+                  class="checkbox__input"
+                  type="radio"
+                  name="жанр"
+                  checked
+                />
+                <span class="checkbox__box"></span>
+                <span class="checkbox__text"> Фанк-рок </span>
+              </label>
+              <label class="checkbox">
+                <input class="checkbox__input" type="radio" name="жанр" />
+                <span class="checkbox__box"></span>
+                <span class="checkbox__text"> Хард-рок </span>
+              </label>
+              <label class="checkbox">
+                <input class="checkbox__input" type="radio" name="жанр" />
+                <span class="checkbox__box"></span>
+                <span class="checkbox__text"> Хэви-метал </span>
+              </label>
+              <label class="checkbox">
+                <input class="checkbox__input" type="radio" name="жанр" />
+                <span class="checkbox__box"></span>
+                <span class="checkbox__text"> Нью-метал </span>
+              </label>
+              <label class="checkbox">
+                <input class="checkbox__input" type="radio" name="жанр" />
+                <span class="checkbox__box"></span>
+                <span class="checkbox__text"> Альтернативный-метал </span>
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="filter-accordion accordion">
+          <button
+            class="filter-accordion__control accordion-control-btn"
+            type="button"
+          >
+            Настроение
+
+            <svg>
+              <use xlink:href="img/sprite.svg#chevron"></use>
+            </svg>
+          </button>
+
+          <div class="filter-accordion__content accordion-content">
+            <div class="filter-accordion__inner">
+              <label class="checkbox">
+                <input
+                  class="checkbox__input"
+                  type="radio"
+                  name="соотношение"
+                  checked
+                />
+                <span class="checkbox__box"></span>
+                <span class="checkbox__text"> По-умолчанию </span>
+              </label>
+              <label class="checkbox">
+                <input
+                  class="checkbox__input"
+                  type="radio"
+                  name="соотношение"
+                />
+                <span class="checkbox__box"></span>
+                <span class="checkbox__text"> По-умолчанию </span>
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <ul class="music__list">
+        <li class="music__item accordion">
+          <div class="music-item">
+            <div class="music-item__left">
+              <div class="music-item__author">
+                <a class="music-item__img" href="#">
+                  <picture>
+                    <source srcset="img/music/1.webp" type="image/webp" />
+                    <img src="img/music/1.jpg" alt="img" />
+                  </picture>
+                </a>
+                <button class="music-item__play">
+                  <svg>
+                    <use xlink:href="img/sprite.svg#music-play"></use>
+                  </svg>
+                </button>
+
+                <div class="music-item__info">
+                  <a class="music-item__title" href="#">Like That</a>
+                  <div class="music-item__feat">
+                    <a href="#">Jane </a><span>&</span><a href="#">The Boy</a>
+                  </div>
+                </div>
+
+                <button class="accordion-control-btn">
+                  <svg>
+                    <use xlink:href="img/sprite.svg#chevron"></use>
+                  </svg>
+                </button>
+              </div>
+
+              <a class="music-item__genre" href="#"> World Electronic</a>
+
+              <button class="music-item__microphone">
+                <svg>
+                  <use xlink:href="img/sprite.svg#microphone"></use>
+                </svg>
+              </button>
+            </div>
+
+            <div class="music-item__right">
+              <div class="music-item__time">
+                <span class="">0:00 </span>/
+                <span class="">2:07</span>
+              </div>
+
+              <div class="music-item__sound">
+                <img src="img/music-sound.png" alt="sound" />
+              </div>
+
+              <div class="music-item__btns">
+                <button class="music-item__btn">
+                  <svg>
+                    <use xlink:href="img/sprite.svg#download"></use>
+                  </svg>
+                </button>
+                <button class="music-item__btn">
+                  <svg>
+                    <use xlink:href="img/sprite.svg#copy"></use>
+                  </svg>
+                </button>
+                <button class="music-item__btn">
+                  <svg>
+                    <use xlink:href="img/sprite.svg#star"></use>
+                  </svg>
+                </button>
+                <button class="music-item__btn">
+                  <svg>
+                    <use xlink:href="img/sprite.svg#share-2"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-content">
+            <div class="music-item">
+              <div class="music-item__left">
+                <div class="music-item__author">
+                  <a class="music-item__img" href="#">
+                    <picture>
+                      <source srcset="img/music/1.webp" type="image/webp" />
+                      <img src="img/music/1.jpg" alt="img" />
+                    </picture>
+                  </a>
+                  <button class="music-item__play">
+                    <svg>
+                      <use xlink:href="img/sprite.svg#music-play"></use>
+                    </svg>
+                  </button>
+
+                  <div class="music-item__info">
+                    <a class="music-item__title" href="#">Like That</a>
+                    <div class="music-item__feat">
+                      <a href="#">Jane </a><span>&</span><a href="#">The Boy</a>
+                    </div>
+                  </div>
+                </div>
+
+                <a class="music-item__genre" href="#"> World Electronic</a>
+              </div>
+
+              <div class="music-item__right">
+                <div class="music-item__time">
+                  <span class="">0:00 </span>/
+                  <span class="">2:07</span>
+                </div>
+
+                <div class="music-item__sound">
+                  <img src="img/music-sound.png" alt="sound" />
+                </div>
+
+                <div class="music-item__btns">
+                  <button class="music-item__btn">
+                    <svg>
+                      <use xlink:href="img/sprite.svg#download"></use>
+                    </svg>
+                  </button>
+                  <button class="music-item__btn">
+                    <svg>
+                      <use xlink:href="img/sprite.svg#copy"></use>
+                    </svg>
+                  </button>
+                  <button class="music-item__btn">
+                    <svg>
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                  </button>
+                  <button class="music-item__btn">
+                    <svg>
+                      <use xlink:href="img/sprite.svg#share-2"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="music-item">
+              <div class="music-item__left">
+                <div class="music-item__author">
+                  <a class="music-item__img" href="#">
+                    <picture>
+                      <source srcset="img/music/1.webp" type="image/webp" />
+                      <img src="img/music/1.jpg" alt="img" />
+                    </picture>
+                  </a>
+                  <button class="music-item__play">
+                    <svg>
+                      <use xlink:href="img/sprite.svg#music-play"></use>
+                    </svg>
+                  </button>
+
+                  <div class="music-item__info">
+                    <a class="music-item__title" href="#">Like That</a>
+                    <div class="music-item__feat">
+                      <a href="#">Jane </a><span>&</span><a href="#">The Boy</a>
+                    </div>
+                  </div>
+                </div>
+
+                <a class="music-item__genre" href="#"> World Electronic</a>
+              </div>
+
+              <div class="music-item__right">
+                <div class="music-item__time">
+                  <span class="">0:00 </span>/
+                  <span class="">2:07</span>
+                </div>
+
+                <div class="music-item__sound">
+                  <img src="img/music-sound.png" alt="sound" />
+                </div>
+
+                <div class="music-item__btns">
+                  <button class="music-item__btn">
+                    <svg>
+                      <use xlink:href="img/sprite.svg#download"></use>
+                    </svg>
+                  </button>
+                  <button class="music-item__btn">
+                    <svg>
+                      <use xlink:href="img/sprite.svg#copy"></use>
+                    </svg>
+                  </button>
+                  <button class="music-item__btn">
+                    <svg>
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                  </button>
+                  <button class="music-item__btn">
+                    <svg>
+                      <use xlink:href="img/sprite.svg#share-2"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="music__item accordion">
+          <div class="music-item">
+            <div class="music-item__left">
+              <div class="music-item__author">
+                <a class="music-item__img" href="#">
+                  <picture>
+                    <source srcset="img/music/1.webp" type="image/webp" />
+                    <img src="img/music/1.jpg" alt="img" />
+                  </picture>
+                </a>
+                <button class="music-item__play">
+                  <svg>
+                    <use xlink:href="img/sprite.svg#music-play"></use>
+                  </svg>
+                </button>
+
+                <div class="music-item__info">
+                  <a class="music-item__title" href="#">Like That - Instrumental Version</a>
+                  <div class="music-item__feat">
+                    <a href="#">Jane </a><span>&</span><a href="#">The Boy</a>
+                  </div>
+                </div>
+
+                <button class="accordion-control-btn">
+                  <svg>
+                    <use xlink:href="img/sprite.svg#chevron"></use>
+                  </svg>
+                </button>
+              </div>
+
+              <a class="music-item__genre" href="#"> World Electronic</a>
+
+              <button class="music-item__microphone">
+                <svg>
+                  <use xlink:href="img/sprite.svg#microphone"></use>
+                </svg>
+              </button>
+            </div>
+
+            <div class="music-item__right">
+              <div class="music-item__time">
+                <span class="">0:00 </span>/
+                <span class="">2:07</span>
+              </div>
+
+              <div class="music-item__sound">
+                <img src="img/music-sound.png" alt="sound" />
+              </div>
+
+              <div class="music-item__btns">
+                <button class="music-item__btn">
+                  <svg>
+                    <use xlink:href="img/sprite.svg#download"></use>
+                  </svg>
+                </button>
+                <button class="music-item__btn">
+                  <svg>
+                    <use xlink:href="img/sprite.svg#copy"></use>
+                  </svg>
+                </button>
+                <button class="music-item__btn">
+                  <svg>
+                    <use xlink:href="img/sprite.svg#star"></use>
+                  </svg>
+                </button>
+                <button class="music-item__btn">
+                  <svg>
+                    <use xlink:href="img/sprite.svg#share-2"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-content">
+            <div class="music-item">
+              <div class="music-item__left">
+                <div class="music-item__author">
+                  <a class="music-item__img" href="#">
+                    <picture>
+                      <source srcset="img/music/1.webp" type="image/webp" />
+                      <img src="img/music/1.jpg" alt="img" />
+                    </picture>
+                  </a>
+                  <button class="music-item__play">
+                    <svg>
+                      <use xlink:href="img/sprite.svg#music-play"></use>
+                    </svg>
+                  </button>
+
+                  <div class="music-item__info">
+                    <a class="music-item__title" href="#">Like That</a>
+                    <div class="music-item__feat">
+                      <a href="#">Jane </a><span>&</span><a href="#">The Boy</a>
+                    </div>
+                  </div>
+                </div>
+
+                <a class="music-item__genre" href="#"> World Electronic</a>
+              </div>
+
+              <div class="music-item__right">
+                <div class="music-item__time">
+                  <span class="">0:00 </span>/
+                  <span class="">2:07</span>
+                </div>
+
+                <div class="music-item__sound">
+                  <img src="img/music-sound.png" alt="sound" />
+                </div>
+
+                <div class="music-item__btns">
+                  <button class="music-item__btn">
+                    <svg>
+                      <use xlink:href="img/sprite.svg#download"></use>
+                    </svg>
+                  </button>
+                  <button class="music-item__btn">
+                    <svg>
+                      <use xlink:href="img/sprite.svg#copy"></use>
+                    </svg>
+                  </button>
+                  <button class="music-item__btn">
+                    <svg>
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                  </button>
+                  <button class="music-item__btn">
+                    <svg>
+                      <use xlink:href="img/sprite.svg#share-2"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="music-item">
+              <div class="music-item__left">
+                <div class="music-item__author">
+                  <a class="music-item__img" href="#">
+                    <picture>
+                      <source srcset="img/music/1.webp" type="image/webp" />
+                      <img src="img/music/1.jpg" alt="img" />
+                    </picture>
+                  </a>
+                  <button class="music-item__play">
+                    <svg>
+                      <use xlink:href="img/sprite.svg#music-play"></use>
+                    </svg>
+                  </button>
+
+                  <div class="music-item__info">
+                    <a class="music-item__title" href="#">Like That</a>
+                    <div class="music-item__feat">
+                      <a href="#">Jane </a><span>&</span><a href="#">The Boy</a>
+                    </div>
+                  </div>
+                </div>
+
+                <a class="music-item__genre" href="#"> World Electronic</a>
+              </div>
+
+              <div class="music-item__right">
+                <div class="music-item__time">
+                  <span class="">0:00 </span>/
+                  <span class="">2:07</span>
+                </div>
+
+                <div class="music-item__sound">
+                  <img src="img/music-sound.png" alt="sound" />
+                </div>
+
+                <div class="music-item__btns">
+                  <button class="music-item__btn">
+                    <svg>
+                      <use xlink:href="img/sprite.svg#download"></use>
+                    </svg>
+                  </button>
+                  <button class="music-item__btn">
+                    <svg>
+                      <use xlink:href="img/sprite.svg#copy"></use>
+                    </svg>
+                  </button>
+                  <button class="music-item__btn">
+                    <svg>
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                  </button>
+                  <button class="music-item__btn">
+                    <svg>
+                      <use xlink:href="img/sprite.svg#share-2"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="music__item accordion">
+          <div class="music-item">
+            <div class="music-item__left">
+              <div class="music-item__author">
+                <a class="music-item__img" href="#">
+                  <picture>
+                    <source srcset="img/music/1.webp" type="image/webp" />
+                    <img src="img/music/1.jpg" alt="img" />
+                  </picture>
+                </a>
+                <button class="music-item__play">
+                  <svg>
+                    <use xlink:href="img/sprite.svg#music-play"></use>
+                  </svg>
+                </button>
+
+                <div class="music-item__info">
+                  <a class="music-item__title" href="#">Like That</a>
+                  <div class="music-item__feat">
+                    <a href="#">Jane </a><span>&</span><a href="#">The Boy</a>
+                  </div>
+                </div>
+
+                <button class="accordion-control-btn">
+                  <svg>
+                    <use xlink:href="img/sprite.svg#chevron"></use>
+                  </svg>
+                </button>
+              </div>
+
+              <a class="music-item__genre" href="#"> World Electronic</a>
+
+              <button class="music-item__microphone">
+                <svg>
+                  <use xlink:href="img/sprite.svg#microphone"></use>
+                </svg>
+              </button>
+            </div>
+
+            <div class="music-item__right">
+              <div class="music-item__time">
+                <span class="">0:00 </span>/
+                <span class="">2:07</span>
+              </div>
+
+              <div class="music-item__sound">
+                <img src="img/music-sound.png" alt="sound" />
+              </div>
+
+              <div class="music-item__btns">
+                <button class="music-item__btn">
+                  <svg>
+                    <use xlink:href="img/sprite.svg#download"></use>
+                  </svg>
+                </button>
+                <button class="music-item__btn">
+                  <svg>
+                    <use xlink:href="img/sprite.svg#copy"></use>
+                  </svg>
+                </button>
+                <button class="music-item__btn">
+                  <svg>
+                    <use xlink:href="img/sprite.svg#star"></use>
+                  </svg>
+                </button>
+                <button class="music-item__btn">
+                  <svg>
+                    <use xlink:href="img/sprite.svg#share-2"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-content">
+            <div class="music-item">
+              <div class="music-item__left">
+                <div class="music-item__author">
+                  <a class="music-item__img" href="#">
+                    <picture>
+                      <source srcset="img/music/1.webp" type="image/webp" />
+                      <img src="img/music/1.jpg" alt="img" />
+                    </picture>
+                  </a>
+                  <button class="music-item__play">
+                    <svg>
+                      <use xlink:href="img/sprite.svg#music-play"></use>
+                    </svg>
+                  </button>
+
+                  <div class="music-item__info">
+                    <a class="music-item__title" href="#">Like That</a>
+                    <div class="music-item__feat">
+                      <a href="#">Jane </a><span>&</span><a href="#">The Boy</a>
+                    </div>
+                  </div>
+                </div>
+
+                <a class="music-item__genre" href="#"> World Electronic</a>
+              </div>
+
+              <div class="music-item__right">
+                <div class="music-item__time">
+                  <span class="">0:00 </span>/
+                  <span class="">2:07</span>
+                </div>
+
+                <div class="music-item__sound">
+                  <img src="img/music-sound.png" alt="sound" />
+                </div>
+
+                <div class="music-item__btns">
+                  <button class="music-item__btn">
+                    <svg>
+                      <use xlink:href="img/sprite.svg#download"></use>
+                    </svg>
+                  </button>
+                  <button class="music-item__btn">
+                    <svg>
+                      <use xlink:href="img/sprite.svg#copy"></use>
+                    </svg>
+                  </button>
+                  <button class="music-item__btn">
+                    <svg>
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                  </button>
+                  <button class="music-item__btn">
+                    <svg>
+                      <use xlink:href="img/sprite.svg#share-2"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="music-item">
+              <div class="music-item__left">
+                <div class="music-item__author">
+                  <a class="music-item__img" href="#">
+                    <picture>
+                      <source srcset="img/music/1.webp" type="image/webp" />
+                      <img src="img/music/1.jpg" alt="img" />
+                    </picture>
+                  </a>
+                  <button class="music-item__play">
+                    <svg>
+                      <use xlink:href="img/sprite.svg#music-play"></use>
+                    </svg>
+                  </button>
+
+                  <div class="music-item__info">
+                    <a class="music-item__title" href="#">Like That</a>
+                    <div class="music-item__feat">
+                      <a href="#">Jane </a><span>&</span><a href="#">The Boy</a>
+                    </div>
+                  </div>
+                </div>
+
+                <a class="music-item__genre" href="#"> World Electronic</a>
+              </div>
+
+              <div class="music-item__right">
+                <div class="music-item__time">
+                  <span class="">0:00 </span>/
+                  <span class="">2:07</span>
+                </div>
+
+                <div class="music-item__sound">
+                  <img src="img/music-sound.png" alt="sound" />
+                </div>
+
+                <div class="music-item__btns">
+                  <button class="music-item__btn">
+                    <svg>
+                      <use xlink:href="img/sprite.svg#download"></use>
+                    </svg>
+                  </button>
+                  <button class="music-item__btn">
+                    <svg>
+                      <use xlink:href="img/sprite.svg#copy"></use>
+                    </svg>
+                  </button>
+                  <button class="music-item__btn">
+                    <svg>
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                  </button>
+                  <button class="music-item__btn">
+                    <svg>
+                      <use xlink:href="img/sprite.svg#share-2"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="music__item accordion">
+          <div class="music-item">
+            <div class="music-item__left">
+              <div class="music-item__author">
+                <a class="music-item__img" href="#">
+                  <picture>
+                    <source srcset="img/music/1.webp" type="image/webp" />
+                    <img src="img/music/1.jpg" alt="img" />
+                  </picture>
+                </a>
+                <button class="music-item__play">
+                  <svg>
+                    <use xlink:href="img/sprite.svg#music-play"></use>
+                  </svg>
+                </button>
+
+                <div class="music-item__info">
+                  <a class="music-item__title" href="#">Like That</a>
+                  <div class="music-item__feat">
+                    <a href="#">Jane </a><span>&</span><a href="#">The Boy</a>
+                  </div>
+                </div>
+
+                <button class="accordion-control-btn">
+                  <svg>
+                    <use xlink:href="img/sprite.svg#chevron"></use>
+                  </svg>
+                </button>
+              </div>
+
+              <a class="music-item__genre" href="#"> World Electronic</a>
+
+              <button class="music-item__microphone">
+                <svg>
+                  <use xlink:href="img/sprite.svg#microphone"></use>
+                </svg>
+              </button>
+            </div>
+
+            <div class="music-item__right">
+              <div class="music-item__time">
+                <span class="">0:00 </span>/
+                <span class="">2:07</span>
+              </div>
+
+              <div class="music-item__sound">
+                <img src="img/music-sound.png" alt="sound" />
+              </div>
+
+              <div class="music-item__btns">
+                <button class="music-item__btn">
+                  <svg>
+                    <use xlink:href="img/sprite.svg#download"></use>
+                  </svg>
+                </button>
+                <button class="music-item__btn">
+                  <svg>
+                    <use xlink:href="img/sprite.svg#copy"></use>
+                  </svg>
+                </button>
+                <button class="music-item__btn">
+                  <svg>
+                    <use xlink:href="img/sprite.svg#star"></use>
+                  </svg>
+                </button>
+                <button class="music-item__btn">
+                  <svg>
+                    <use xlink:href="img/sprite.svg#share-2"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-content">
+            <div class="music-item">
+              <div class="music-item__left">
+                <div class="music-item__author">
+                  <a class="music-item__img" href="#">
+                    <picture>
+                      <source srcset="img/music/1.webp" type="image/webp" />
+                      <img src="img/music/1.jpg" alt="img" />
+                    </picture>
+                  </a>
+                  <button class="music-item__play">
+                    <svg>
+                      <use xlink:href="img/sprite.svg#music-play"></use>
+                    </svg>
+                  </button>
+
+                  <div class="music-item__info">
+                    <a class="music-item__title" href="#">Like That</a>
+                    <div class="music-item__feat">
+                      <a href="#">Jane </a><span>&</span><a href="#">The Boy</a>
+                    </div>
+                  </div>
+                </div>
+
+                <a class="music-item__genre" href="#"> World Electronic</a>
+              </div>
+
+              <div class="music-item__right">
+                <div class="music-item__time">
+                  <span class="">0:00 </span>/
+                  <span class="">2:07</span>
+                </div>
+
+                <div class="music-item__sound">
+                  <img src="img/music-sound.png" alt="sound" />
+                </div>
+
+                <div class="music-item__btns">
+                  <button class="music-item__btn">
+                    <svg>
+                      <use xlink:href="img/sprite.svg#download"></use>
+                    </svg>
+                  </button>
+                  <button class="music-item__btn">
+                    <svg>
+                      <use xlink:href="img/sprite.svg#copy"></use>
+                    </svg>
+                  </button>
+                  <button class="music-item__btn">
+                    <svg>
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                  </button>
+                  <button class="music-item__btn">
+                    <svg>
+                      <use xlink:href="img/sprite.svg#share-2"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="music-item">
+              <div class="music-item__left">
+                <div class="music-item__author">
+                  <a class="music-item__img" href="#">
+                    <picture>
+                      <source srcset="img/music/1.webp" type="image/webp" />
+                      <img src="img/music/1.jpg" alt="img" />
+                    </picture>
+                  </a>
+                  <button class="music-item__play">
+                    <svg>
+                      <use xlink:href="img/sprite.svg#music-play"></use>
+                    </svg>
+                  </button>
+
+                  <div class="music-item__info">
+                    <a class="music-item__title" href="#">Like That</a>
+                    <div class="music-item__feat">
+                      <a href="#">Jane </a><span>&</span><a href="#">The Boy</a>
+                    </div>
+                  </div>
+                </div>
+
+                <a class="music-item__genre" href="#"> World Electronic</a>
+              </div>
+
+              <div class="music-item__right">
+                <div class="music-item__time">
+                  <span class="">0:00 </span>/
+                  <span class="">2:07</span>
+                </div>
+
+                <div class="music-item__sound">
+                  <img src="img/music-sound.png" alt="sound" />
+                </div>
+
+                <div class="music-item__btns">
+                  <button class="music-item__btn">
+                    <svg>
+                      <use xlink:href="img/sprite.svg#download"></use>
+                    </svg>
+                  </button>
+                  <button class="music-item__btn">
+                    <svg>
+                      <use xlink:href="img/sprite.svg#copy"></use>
+                    </svg>
+                  </button>
+                  <button class="music-item__btn">
+                    <svg>
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                  </button>
+                  <button class="music-item__btn">
+                    <svg>
+                      <use xlink:href="img/sprite.svg#share-2"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+
+      <ul class="pagination">
+        <li class="pagination__item">
+          <button class="pagination__btn pagination__btn--prev">
+            <svg>
+              <use xlink:href="img/sprite.svg#chevron"></use>
+            </svg>
+            Назад
+          </button>
+        </li>
+        <li class="pagination__item">
+          <button class="pagination__btn active">1</button>
+        </li>
+        <li class="pagination__item">
+          <button class="pagination__btn">2</button>
+        </li>
+        <li class="pagination__item">
+          <button class="pagination__btn">3</button>
+        </li>
+        <li class="pagination__item">
+          <button class="pagination__btn">4</button>
+        </li>
+        <li class="pagination__item">
+          <button class="pagination__btn">5</button>
+        </li>
+        <li class="pagination__item">
+          <button class="pagination__btn pagination__btn--next">
+            Далее
+            <svg>
+              <use xlink:href="img/sprite.svg#chevron"></use>
+            </svg>
+          </button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
+<link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+
+<!-- Link Swiper's CSS -->
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+<!-- nouislider -->
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.5.0/nouislider.min.css"
+/>
+
+<!-- Choices JS  -->
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css"
+/>
+
+<!-- Nice Select -->
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.min.css"
+/>
+
+<!-- fancybox -->
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css"
+/>
+
+<!-- Custom Link -->
+<link rel="stylesheet" href="css/style.css" />
+
+<title>Hronicca</title>
+
+  </head>
+
+  <body>
+    <div class="popup popup--login">
+  <div class="popup__container">
+    <button class="popup__close" type="button" aria-label="Закрыть">
+      <svg width="15" height="15">
+        <use xlink:href="img/sprite.svg#close"></use>
+      </svg>
+    </button>
+    <div class="popup__wrapper">
+      <h2 class="popup__title">Войти</h2>
+
+      <form class="form-submit">
+        <div class="form-submit__login">
+          <button
+            class="form-submit__login-btn form-submit__login-btn--facebook"
+            type="button"
+          >
+            <svg>
+              <use xlink:href="img/sprite.svg#facebook"></use>
+            </svg>
+            Facebook
+          </button>
+          <button
+            class="form-submit__login-btn form-submit__login-btn--google"
+            type="button"
+          >
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 16 16"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g clip-path="url(#clip0_125_2)">
+                <path
+                  d="M15.9924 8.14945C15.9924 7.49394 15.938 7.01559 15.8202 6.51953H8.15942V9.47819H12.6561C12.5655 10.2135 12.0759 11.3208 10.988 12.0648L10.9727 12.1639L13.3949 13.9973L13.5627 14.0137C15.1039 12.6229 15.9924 10.5766 15.9924 8.14945Z"
+                  fill="#4285F4"
+                />
+                <path
+                  d="M8.15942 15.9446C10.3624 15.9446 12.2119 15.2359 13.5627 14.0134L10.988 12.0646C10.299 12.534 9.37424 12.8618 8.15942 12.8618C6.00174 12.8618 4.17042 11.4711 3.51761 9.54883L3.42192 9.55677L0.903299 11.4613L0.870361 11.5508C2.21211 14.1551 4.96817 15.9446 8.15942 15.9446Z"
+                  fill="#34A853"
+                />
+                <path
+                  d="M3.51756 9.54985C3.34531 9.05379 3.24563 8.52225 3.24563 7.97306C3.24563 7.4238 3.34531 6.89232 3.5085 6.39626L3.50394 6.29061L0.95375 4.35547L0.870313 4.39425C0.317313 5.47498 0 6.6886 0 7.97306C0 9.25751 0.317313 10.4711 0.870313 11.5518L3.51756 9.54985Z"
+                  fill="#FBBC05"
+                />
+                <path
+                  d="M8.15942 3.08269C9.69155 3.08269 10.725 3.72934 11.3144 4.26974L13.6171 2.07286C12.2029 0.788397 10.3624 0 8.15942 0C4.96817 0 2.21211 1.78937 0.870361 4.39371L3.50855 6.39573C4.17042 4.47347 6.00174 3.08269 8.15942 3.08269Z"
+                  fill="#EB4335"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_125_2">
+                  <rect width="16" height="16" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+            Google
+          </button>
+          <button
+            class="form-submit__login-btn form-submit__login-btn--yandex"
+            type="button"
+          >
+            <svg>
+              <use xlink:href="img/sprite.svg#yandex"></use>
+            </svg>
+            Yandex
+          </button>
+        </div>
+        <label class="form-submit__group">
+          <input class="form-submit__input" type="email" placeholder="E-mail" />
+        </label>
+        <label class="form-submit__group">
+          <input
+            class="form-submit__input"
+            type="password"
+            placeholder="Пароль"
+          />
+        </label>
+        <button class="form-submit__btn btn" type="button">Войти</button>
+        <p class="form-submit__text">Забыли пароль?</p>
+        <p class="form-submit__account">
+          Еще нет аккаунта? <a href="#">Зарегистрируйтесь</a>
+        </p>
+      </form>
+    </div>
+  </div>
+</div>
+
+<div class="popup popup--reg">
+  <div class="popup__container">
+    <button class="popup__close" type="button" aria-label="Закрыть">
+      <svg width="15" height="15">
+        <use xlink:href="img/sprite.svg#close"></use>
+      </svg>
+    </button>
+    <div class="popup__wrapper">
+      <div class="start-block">
+        <div class="start-block__left">
+          <h2 class="start-block__title">
+            Начните знакомство с hronicca бесплатно
+          </h2>
+
+          <ul class="start-block__list">
+            <li class="start-block__item">
+              Загружайте неограниченное количество музыки и видеоматериалов с
+              водяными знаками
+            </li>
+            <li class="start-block__item">
+              Сохраняйте и сортируйте ресурсы в соответствии с вашими проектами
+            </li>
+            <li class="start-block__item">
+              Поделитесь своими кураторскими коллекциями
+            </li>
+            <li class="start-block__item">
+              Получайте последние обновления и учебные пособия в свой почтовый
+              ящик
+            </li>
+          </ul>
+        </div>
+        <div class="start-block__right">
+          <h3 class="start-block__heading">Создать бесплатный аккаунт</h3>
+
+          <form class="form-submit">
+            <div class="form-submit__login">
+              <button
+                class="form-submit__login-btn form-submit__login-btn--facebook"
+                type="button"
+              >
+                <svg>
+                  <use xlink:href="img/sprite.svg#facebook"></use>
+                </svg>
+                Facebook
+              </button>
+              <button
+                class="form-submit__login-btn form-submit__login-btn--google"
+                type="button"
+              >
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_125_2)">
+                    <path
+                      d="M15.9924 8.14945C15.9924 7.49394 15.938 7.01559 15.8202 6.51953H8.15942V9.47819H12.6561C12.5655 10.2135 12.0759 11.3208 10.988 12.0648L10.9727 12.1639L13.3949 13.9973L13.5627 14.0137C15.1039 12.6229 15.9924 10.5766 15.9924 8.14945Z"
+                      fill="#4285F4"
+                    />
+                    <path
+                      d="M8.15942 15.9446C10.3624 15.9446 12.2119 15.2359 13.5627 14.0134L10.988 12.0646C10.299 12.534 9.37424 12.8618 8.15942 12.8618C6.00174 12.8618 4.17042 11.4711 3.51761 9.54883L3.42192 9.55677L0.903299 11.4613L0.870361 11.5508C2.21211 14.1551 4.96817 15.9446 8.15942 15.9446Z"
+                      fill="#34A853"
+                    />
+                    <path
+                      d="M3.51756 9.54985C3.34531 9.05379 3.24563 8.52225 3.24563 7.97306C3.24563 7.4238 3.34531 6.89232 3.5085 6.39626L3.50394 6.29061L0.95375 4.35547L0.870313 4.39425C0.317313 5.47498 0 6.6886 0 7.97306C0 9.25751 0.317313 10.4711 0.870313 11.5518L3.51756 9.54985Z"
+                      fill="#FBBC05"
+                    />
+                    <path
+                      d="M8.15942 3.08269C9.69155 3.08269 10.725 3.72934 11.3144 4.26974L13.6171 2.07286C12.2029 0.788397 10.3624 0 8.15942 0C4.96817 0 2.21211 1.78937 0.870361 4.39371L3.50855 6.39573C4.17042 4.47347 6.00174 3.08269 8.15942 3.08269Z"
+                      fill="#EB4335"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_125_2">
+                      <rect width="16" height="16" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+                Google
+              </button>
+              <button
+                class="form-submit__login-btn form-submit__login-btn--yandex"
+                type="button"
+              >
+                <svg>
+                  <use xlink:href="img/sprite.svg#yandex"></use>
+                </svg>
+                Yandex
+              </button>
+            </div>
+            <label class="form-submit__group">
+              <input
+                class="form-submit__input"
+                type="text"
+                placeholder="Логин"
+              />
+            </label>
+            <label class="form-submit__group">
+              <input
+                class="form-submit__input"
+                type="email"
+                placeholder="E-mail"
+              />
+            </label>
+            <label class="form-submit__group">
+              <input
+                class="form-submit__input"
+                type="password"
+                placeholder="Пароль"
+              />
+            </label>
+
+            <label class="checkbox checkbox--policy">
+              <input class="checkbox__input" type="checkbox" required />
+              <span class="checkbox__box"></span>
+              <span class="checkbox__text">
+                Принимаю <a href="#">правила сайта</a> и соглашаюсь <br />
+                с <a href="#">политикой конфиденциальности</a>
+              </span>
+            </label>
+            <button class="form-submit__btn btn" type="button">
+              Создать аккаунт
+            </button>
+            <p class="form-submit__account">
+              Уже есть аккаунт? <a href="#">Войти</a>
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="popup popup--prices">
+  <div class="popup__container">
+    <button class="popup__close" type="button" aria-label="Закрыть">
+      <svg width="15" height="15">
+        <use xlink:href="img/sprite.svg#close"></use>
+      </svg>
+    </button>
+    <div class="popup__wrapper">
+      <section class="prices">
+        <div class="container">
+          <h2 class="prices__title section-title">Наши цены</h2>
+
+          <ul class="prices__list">
+            <li class="prices-item">
+              <div class="prices-item__top">
+                <div class="prices-item__head">
+                  <h3 class="prices-item__title">Кадры</h3>
+                  <p class="prices-item__text">HD-кадры</p>
+                </div>
+
+                <div class="prices-item__price"><span>590</span> ₽/мес</div>
+                <p class="prices-item__text">Выставляется ежегодно</p>
+                <button class="prices-item__btn btn" type="button">
+                  Выбрать
+                </button>
+              </div>
+              <div class="prices-item__info">
+                <p class="prices-item__descr">
+                  Охватывает все от личного до коммерческого использования
+                </p>
+                <div class="prices-item__bottom">
+                  <span class="prices-item__name">План включает в себя</span>
+                  <ul class="prices-item__list">
+                    <li class="prices-item__item">Footage</li>
+                    <li class="prices-item__item">Format H.264</li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="prices-item">
+              <div class="prices-item__top">
+                <div class="prices-item__head">
+                  <h3 class="prices-item__title">Кадры и шаблоны</h3>
+                  <p class="prices-item__text">4К - 8К</p>
+                </div>
+
+                <div class="prices-item__price"><span>690</span> ₽/мес</div>
+                <p class="prices-item__text">Выставляется ежегодно</p>
+                <button class="prices-item__btn btn" type="button">
+                  Выбрать
+                </button>
+              </div>
+              <div class="prices-item__info">
+                <p class="prices-item__descr">
+                  Охватывает все от личного до коммерческого использования
+                </p>
+                <div class="prices-item__bottom">
+                  <span class="prices-item__name">План включает в себя</span>
+                  <ul class="prices-item__list">
+                    <li class="prices-item__item">Footage до 8K</li>
+                    <li class="prices-item__item">ProRes/DNxHR</li>
+                    <li class="prices-item__item">Видео</li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="prices-item">
+              <div class="prices-item__top">
+                <div class="prices-item__head">
+                  <h3 class="prices-item__title">
+                    Видеоматеориалы и шаблоны Pro
+                  </h3>
+                  <p class="prices-item__text">
+                    4K-8K RAW / видеозапись и шаблоны видео
+                  </p>
+                </div>
+
+                <div class="prices-item__price"><span>790</span> ₽/мес</div>
+                <p class="prices-item__text">Выставляется ежегодно</p>
+                <button class="prices-item__btn btn" type="button">
+                  Выбрать
+                </button>
+              </div>
+              <div class="prices-item__info">
+                <p class="prices-item__descr">
+                  Охватывает все от личного до коммерческого использования
+                </p>
+                <div class="prices-item__bottom">
+                  <span class="prices-item__name">План включает в себя</span>
+                  <ul class="prices-item__list">
+                    <li class="prices-item__item">Footage до 8К</li>
+                    <li class="prices-item__item">RAW/LOG footage</li>
+                    <li class="prices-item__item">ProRes/DNxHR format</li>
+                    <li class="prices-item__item">Видео шаблоны</li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </div>
+  </div>
+</div>
+
+<div class="popup popup--choose">
+  <div class="popup__container">
+    <button class="popup__close" type="button" aria-label="Закрыть">
+      <svg width="15" height="15">
+        <use xlink:href="img/sprite.svg#close"></use>
+      </svg>
+    </button>
+    <div class="popup__wrapper">
+      <div class="form-steps">
+        <div class="form-steps__left">
+          <div class="steps-count">
+            <span class="color-yellow">Шаги </span>
+
+            <div class="steps-count__steps">
+              <div class="steps-count__step active">
+                <span>1</span>
+                Регистрация
+              </div>
+              <div class="steps-count__step">
+                <span>2</span>
+                Оплата
+              </div>
+            </div>
+          </div>
+          <h2 class="form-steps__title">Введите свои данные для регистрации</h2>
+
+          <form class="form-steps__form form-submit">
+            <label class="form-submit__group">
+              <input
+                class="form-submit__input"
+                type="text"
+                placeholder="Логин"
+              />
+            </label>
+            <label class="form-submit__group">
+              <input
+                class="form-submit__input"
+                type="email"
+                placeholder="E-mail"
+              />
+            </label>
+            <label class="form-submit__group">
+              <input
+                class="form-submit__input"
+                type="password"
+                placeholder="Пароль"
+              />
+            </label>
+            <label class="checkbox checkbox--policy">
+              <input class="checkbox__input" type="checkbox" required />
+              <span class="checkbox__box"></span>
+              <span class="checkbox__text">
+                Принимаю <a href="#">правила сайта</a> и соглашаюсь <br />
+                с <a href="#">политикой конфиденциальности</a>
+              </span>
+            </label>
+            <button class="form-submit__btn btn" type="submit">
+              Зарегистрироваться
+            </button>
+          </form>
+        </div>
+
+        <div class="form-steps__right">
+          <span class="form-steps__name">Выбранный план</span>
+          <li class="prices-item">
+            <div class="prices-item__top">
+              <div class="prices-item__head">
+                <h3 class="prices-item__title">
+                  Видеоматеориалы и шаблоны Pro
+                </h3>
+                <p class="prices-item__text">
+                  4K-8K RAW / видеозапись и шаблоны видео
+                </p>
+              </div>
+
+              <div class="prices-item__price"><span>790</span> ₽/мес</div>
+              <p class="prices-item__text">Выставляется ежегодно</p>
+            </div>
+            <div class="prices-item__info">
+              <div class="prices-item__bottom">
+                <span class="prices-item__name">План включает в себя</span>
+                <ul class="prices-item__list">
+                  <li class="prices-item__item">Footage до 8К</li>
+                  <li class="prices-item__item">RAW/LOG footage</li>
+                  <li class="prices-item__item">ProRes/DNxHR format</li>
+                  <li class="prices-item__item">Видео шаблоны</li>
+                </ul>
+              </div>
+              <button class="prices-item__btn btn" type="button">
+                Оплатить
+              </button>
+            </div>
+          </li>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="popup popup--order">
+  <div class="popup__container">
+    <button class="popup__close" type="button" aria-label="Закрыть">
+      <svg width="15" height="15">
+        <use xlink:href="img/sprite.svg#close"></use>
+      </svg>
+    </button>
+    <div class="popup__wrapper">
+      <div class="order">
+        <div class="order__text">Ваш заказ</div>
+        <div class="order__info">
+          <span class="order__title"
+            >Видеоматеориалы <br />
+            и шаблоны Pro</span
+          >
+          <span class="order__price">790 ₽/мес</span>
+        </div>
+        <div class="order__total">
+          <span class="order__total-text">Итого к оплате</span>
+          <span class="order__total-price">790 ₽/мес</span>
+        </div>
+        <button class="order__btn btn" type="button">Оплатить</button>
+        <div class="order__safe">
+          <img src="img/safe.png" alt="img" />
+          Безопасный платеж
+        </div>
+        <p class="order__bottom">
+          Нажимая кнопку “Оплатить", вы соглашаетесь с нашей
+          <a href="#">профессиональной лицензией,</a> плагинами
+          <a href="#">Лицензионное соглашение</a> и п<a href="#"
+            >рограммное обеспечение</a
+          >
+          Лицензионное соглашение и ваша подписка вступают в силу немедленно.
+          Ваша подписка будет автоматически продлеваться ежегодно, если вы ее не
+          отмените. Вы можете отменить в любое время через настройки своей
+          учетной записи или связавшись с нами, это вступает в силу в конце
+          расчетного периода.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    <div class="site-wrapper">
+      <header class="header header--account">
+  <div class="container">
+    <nav class="header__wrapper">
+      <div class="header__left">
+        <a class="header__logo" href="#">
+          <img src="img/logo.png" alt="logo" />
+        </a>
+
+        <div class="menu">
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a class="menu__link" href="#"> Видео </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#"> Фото </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#"> Музыка </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="header__right">
+        <button class="header__btn btn btn-reg" type="button">
+          Попробовать бесплатно
+        </button>
+        <button class="header__btn-prices btn-prices" type="button">
+          <svg>
+            <use xlink:href="img/sprite.svg#wallet"></use>
+          </svg>
+          Цены
+        </button>
+        <button class="header__acc" type="button">
+          <img src="img/user-img.png" alt="user" />
+          <span>Roman</span>
+
+          <div class="user-dropdown">
+            <ul class="user-dropdown__list">
+              <li class="user-dropdown__item">
+                <a class="user-dropdown__link" href="#">Мой аĸĸаунт</a>
+              </li>
+              <li class="user-dropdown__item">
+                <a class="user-dropdown__link" href="#">Мои файлы</a>
+              </li>
+              <li class="user-dropdown__item">
+                <a class="user-dropdown__link" href="#">Выйти</a>
+              </li>
+            </ul>
+          </div>
+        </button>
+        <button
+          class="header__toggle header__toggle--anim"
+          type="button"
+          aria-label="Открыть меню"
+        >
+          <span class="header__toggle-line"></span>
+        </button>
+      </div>
+    </nav>
+  </div>
+</header>
+
+
+      <main class="main mt-0">
+        <div class="grid">
+          <div class="container">
+            <div class="grid__inner">
+              <div class="grid__aside aside">
+                <div class="aside__inner">
+                  <span class="aside__name">Мой аккаунт</span>
+                  <ul class="aside__list">
+                    <li class="aside__item">
+                      <a class="aside__link" href="#">
+                        <svg>
+                          <use xlink:href="img/sprite.svg#user-fill"></use>
+                        </svg>
+                        Избранные
+                      </a>
+                    </li>
+                    <li class="aside__item">
+                      <a class="aside__link active" href="#">
+                        <svg>
+                          <use xlink:href="img/sprite.svg#tarif"></use>
+                        </svg>
+                        Тариф и платежи
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="aside-mobile">
+                <span class="aside-mobile__name">Мой аккаунт</span>
+                <ul class="aside-mobile__list">
+                  <li class="aside-mobile__item">
+                    <a class="aside-mobile__link active" href="#">
+                      <svg>
+                        <use xlink:href="img/sprite.svg#user-fill"></use>
+                      </svg>
+                      Избранные
+                    </a>
+                  </li>
+                  <li class="aside-mobile__item">
+                    <a class="aside-mobile__link" href="#">
+                      <svg>
+                        <use xlink:href="img/sprite.svg#tarif"></use>
+                      </svg>
+                      Тариф и платежи
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="grid__right">
+                <section class="tarif">
+  <div class="tarif__wrapper">
+    <h1 class="tarif__title">Тариф и платежи</h1>
+
+    <span class="tarif__name">Мой тариф</span>
+
+    <button class="tarif__btn" type="button">
+      <span class="white">Бесплатный</span>
+      <span class="accent">Купить подписку</span>
+    </button>
+
+    <span class="tarif__text">
+      Купите подписку, чтобы получать неограниченное количество загрузок
+    </span>
+  </div>
+</section>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <footer class="footer footer--account">
+  <div class="container">
+    <div class="footer__wrapper">
+      <div class="footer__left">
+        <a class="footer__logo" href="index.html">
+          <img src="img/logo-gray.png" alt="logo" />
+        </a>
+        <p class="footer__text">
+          Наша миссия - дать возможность создателям по всему миру рассказывать
+          свои истории с помощью фото и видео. Мы предоставляем возможности
+          креативной индустрии с помощью мощного программного обеспечения для
+          редактирования видео, профессиональных цифровых ресурсов для создания
+          видео и доступных учебных ресурсов, которые помогут вам в достижении
+          вашего видения.
+        </p>
+      </div>
+      <div class="footer__right">
+        <div class="footer__col">
+          <span class="footer__name">Наши продукты</span>
+
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a class="footer__link" href="#">Видео</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Фотографии</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Музыка</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <span class="footer__name">О нас</span>
+
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a class="footer__link" href="#">О сервисе </a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Цены</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#"> Стать автором</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <span class="footer__name">Клиентам</span>
+
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a class="footer__link" href="#">Вопросы - ответы </a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#"> Техподдержка</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#"> Авторская лицензия</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <span class="footer__name">Контакты</span>
+
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a class="footer__link" href="#">info@roman.com </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="footer__copy">
+        © 2023. hronicca — Творческие ресурсы. Все права защищены.
+      </div>
+      <a class="company" href="https://razrabotka-saita.ru/" target="_blank">
+        <span>Разработка сайта</span>
+        <img src="img/logo-company.png" alt="АдвансМедиа" />
+      </a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+
+    <!-- Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<!-- nouislider -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.5.0/nouislider.min.js"></script>
+
+<!-- jQuery -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!-- Choices JS -->
+<script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
+
+<!-- Input Mask -->
+<script
+  src="https://cdn.jsdelivr.net/npm/jquery.maskedinput@1.4.1/src/jquery.maskedinput.min.js"
+  type="text/javascript"
+></script>
+
+<!-- Nice Select -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js"></script>
+
+<!-- fancybox -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+
+<!-- JS -->
+<script src="js/main.min.js"></script>
+
+  </body>
+</html>

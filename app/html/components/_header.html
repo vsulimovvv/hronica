@@ -1,0 +1,128 @@
+<header class="header header--main">
+  <!-- Mobile Menu -->
+  <div class="overlay"></div>
+
+  <div class="mobile-menu">
+    <div class="mobile-menu__top">
+      <a class="mobile-menu__logo logo" href="#">
+        <img src="img/logo.png" alt="логотип" />
+      </a>
+      <button
+        class="mobile-menu__close"
+        type="button"
+        aria-label="Закрыть меню"
+      >
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M6 6L18 18"
+            stroke="#f1ebda"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M18 6L6 18"
+            stroke="#f1ebda"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+      </button>
+    </div>
+
+    <ul class="mobile-menu__list">
+      <li class="mobile-menu__item">
+        <a class="mobile-menu__link" href="#"><span>Видео </span></a>
+      </li>
+      <li class="mobile-menu__item">
+        <a class="mobile-menu__link" href="#"><span>Фото</span></a>
+      </li>
+      <li class="mobile-menu__item">
+        <a class="mobile-menu__link" href="#"><span>Музыка</span></a>
+      </li>
+    </ul>
+
+    <div class="mobile-menu__btns">
+      <button class="mobile-menu__btn btn" type="button">
+        Попробовать бесплатно
+      </button>
+      <button class="mobile-menu__btn-prices">
+        <svg>
+          <use xlink:href="img/sprite.svg#wallet"></use>
+        </svg>
+        Цены
+      </button>
+      <button class="mobile-menu__login">
+        <svg>
+          <use xlink:href="img/sprite.svg#user"></use>
+        </svg>
+        Войти
+      </button>
+    </div>
+  </div>
+  <!-- Mobile Menu -->
+
+  <div class="container">
+    <nav class="header__wrapper">
+      <div class="header__left">
+        <a class="header__logo" href="#">
+          <img src="img/logo.png" alt="logo" />
+        </a>
+
+        <div class="menu">
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a class="menu__link" href="#"> Видео </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#"> Фото </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#"> Музыка </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="header__right">
+        <form class="header__form form-search">
+          <div class="form-search__top">
+            <div class="form-search__input">
+              <input type="text" placeholder="Что хотите найти?" />
+
+              <select class="form-search__select">
+                <option value="0">Фото</option>
+                <option value="1">Видео</option>
+                <option value="2">Музыка</option>
+              </select>
+            </div>
+          </div>
+        </form>
+        <button class="header__btn btn btn-reg" type="button">
+          Попробовать бесплатно
+        </button>
+        <button class="header__btn-prices btn-prices" type="button">
+          <svg>
+            <use xlink:href="img/sprite.svg#wallet"></use>
+          </svg>
+          Цены
+        </button>
+        <button class="header__login btn-login" type="button">
+          <svg>
+            <use xlink:href="img/sprite.svg#user"></use>
+          </svg>
+          Войти
+        </button>
+        <button class="header__toggle" type="button" aria-label="Открыть меню">
+          <span class="header__toggle-line"></span>
+        </button>
+      </div>
+    </nav>
+  </div>
+</header>

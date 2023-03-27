@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    @include('./components/base/_meta.html')
+    @include('./components/base/_links.html')
+  </head>
+
+  <body>
+    @include('./components/_popups.html')
+
+    <div class="site-wrapper">
+      @include('./components/_header.html')
+
+      <main class="main mt-0">@include('./components/_files.html')</main>
+
+      @include('./components/_footer-account.html')
+    </div>
+
+    @include('./components/base/_scripts.html')
+  </body>
+</html>
