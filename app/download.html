@@ -514,77 +514,7 @@
 
 
     <div class="site-wrapper">
-      <header class="header header--relative">
-  <!-- Mobile Menu -->
-  <div class="overlay"></div>
-
-  <div class="mobile-menu">
-    <div class="mobile-menu__top">
-      <a class="mobile-menu__logo logo" href="#">
-        <img src="img/logo.png" alt="логотип" />
-      </a>
-      <button
-        class="mobile-menu__close"
-        type="button"
-        aria-label="Закрыть меню"
-      >
-        <svg
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M6 6L18 18"
-            stroke="#f1ebda"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          />
-          <path
-            d="M18 6L6 18"
-            stroke="#f1ebda"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          />
-        </svg>
-      </button>
-    </div>
-
-    <ul class="mobile-menu__list">
-      <li class="mobile-menu__item">
-        <a class="mobile-menu__link" href="#"><span>Видео </span></a>
-      </li>
-      <li class="mobile-menu__item">
-        <a class="mobile-menu__link" href="#"><span>Фото</span></a>
-      </li>
-      <li class="mobile-menu__item">
-        <a class="mobile-menu__link" href="#"><span>Музыка</span></a>
-      </li>
-    </ul>
-
-    <div class="mobile-menu__btns">
-      <button class="mobile-menu__btn btn" type="button">
-        Попробовать бесплатно
-      </button>
-      <button class="mobile-menu__btn-prices">
-        <svg>
-          <use xlink:href="img/sprite.svg#wallet"></use>
-        </svg>
-        Цены
-      </button>
-      <button class="mobile-menu__login">
-        <svg>
-          <use xlink:href="img/sprite.svg#user"></use>
-        </svg>
-        Войти
-      </button>
-    </div>
-  </div>
-  <!-- Mobile Menu -->
-
+      <header class="header header--account">
   <div class="container">
     <nav class="header__wrapper">
       <div class="header__left">
@@ -607,19 +537,6 @@
         </div>
       </div>
       <div class="header__right">
-        <form class="header__form form-search">
-          <div class="form-search__top">
-            <div class="form-search__input">
-              <input type="text" placeholder="Что хотите найти?" />
-
-              <select class="form-search__select">
-                <option value="0">Фото</option>
-                <option value="1">Видео</option>
-                <option value="2">Музыка</option>
-              </select>
-            </div>
-          </div>
-        </form>
         <button class="header__btn btn btn-reg" type="button">
           Попробовать бесплатно
         </button>
@@ -629,13 +546,29 @@
           </svg>
           Цены
         </button>
-        <button class="header__login btn-login" type="button">
-          <svg>
-            <use xlink:href="img/sprite.svg#user"></use>
-          </svg>
-          Войти
+        <button class="header__acc" type="button">
+          <img src="img/user-img.jpg" alt="user" />
+          <span>Roman</span>
+
+          <div class="user-dropdown">
+            <ul class="user-dropdown__list">
+              <li class="user-dropdown__item">
+                <a class="user-dropdown__link" href="#">Мой аĸĸаунт</a>
+              </li>
+              <li class="user-dropdown__item">
+                <a class="user-dropdown__link" href="#">Мои файлы</a>
+              </li>
+              <li class="user-dropdown__item">
+                <a class="user-dropdown__link" href="#">Выйти</a>
+              </li>
+            </ul>
+          </div>
         </button>
-        <button class="header__toggle" type="button" aria-label="Открыть меню">
+        <button
+          class="header__toggle header__toggle--anim"
+          type="button"
+          aria-label="Открыть меню"
+        >
           <span class="header__toggle-line"></span>
         </button>
       </div>
@@ -644,373 +577,206 @@
 </header>
 
 
-      <main class="main">
-        <section class="promo">
-  <div class="container">
-    <div class="promo__wrapper">
-      <div class="promo__offer">
-        <h1 class="promo__title">Фото архив для ваших проеĸтов</h1>
-        <p class="promo__text">Введите свой запрос для поисĸа фото</p>
-
-        <form class="promo__form form-search">
-          <div class="form-search__bottom">
-            <span class="form-search__name">Например</span>
-            <ul class="form-search__tags tags">
-              <li class="tags__item">
-                <a class="tags__tag" href="#">Йога дома</a>
-              </li>
-              <li class="tags__item">
-                <a class="tags__tag" href="#">Бизнес встреча</a>
-              </li>
-              <li class="tags__item">
-                <a class="tags__tag" href="#">Смартфон в руĸе</a>
-              </li>
-              <li class="tags__item">
-                <a class="tags__tag" href="#">Семья</a>
-              </li>
-              <li class="tags__item">
-                <a class="tags__tag" href="#">Природа</a>
-              </li>
-              <li class="tags__item">
-                <a class="tags__tag" href="#">Спорт ворĸаут</a>
-              </li>
-            </ul>
-          </div>
-          <div class="form-search__top">
-            <div class="form-search__input">
-              <input type="text" placeholder="Что хотите найти?" />
-
-              <select class="form-search__select">
-                <option value="0">Фото</option>
-                <option value="1">Видео</option>
-                <option value="2">Музыка</option>
-              </select>
-            </div>
-            <button class="form-search__btn" type="button">
-              <svg>
-                <use xlink:href="img/sprite.svg#search"></use>
-              </svg>
-            </button>
-          </div>
-        </form>
-      </div>
-    </div>
-  </div>
-</section>
-
-        <section class="photo">
-  <div class="container">
-    <div class="photo__wrapper">
-      <div class="photo__top photo-filter">
-        <ul class="photo-filter__list">
-          <li class="photo-filter__item">
-            Соотношение сторон
-
-            <svg>
-              <use xlink:href="img/sprite.svg#chevron"></use>
-            </svg>
-
-            <div class="select-dropdown">
-              <div class="select-dropdown__inner">
-                <label class="checkbox">
-                  <input
-                    class="checkbox__input"
-                    type="radio"
-                    name="соотношение"
-                    checked
-                  />
-                  <span class="checkbox__box"></span>
-                  <span class="checkbox__text"> Горизонтальные </span>
-                </label>
-                <label class="checkbox">
-                  <input
-                    class="checkbox__input"
-                    type="radio"
-                    name="соотношение"
-                  />
-                  <span class="checkbox__box"></span>
-                  <span class="checkbox__text"> Вертикальные </span>
-                </label>
+      <main class="main mt-0">
+        <div class="grid">
+          <div class="container">
+            <div class="grid__inner">
+              <div class="grid__aside aside">
+                <div class="aside__inner">
+                  <span class="aside__name">Мой аккаунт</span>
+                  <ul class="aside__list">
+                    <li class="aside__item">
+                      <a class="aside__link active" href="#">
+                        <svg>
+                          <use xlink:href="img/sprite.svg#user-fill"></use>
+                        </svg>
+                        Избранные
+                      </a>
+                    </li>
+                    <li class="aside__item">
+                      <a class="aside__link" href="#">
+                        <svg>
+                          <use xlink:href="img/sprite.svg#tarif"></use>
+                        </svg>
+                        Тариф и платежи
+                      </a>
+                    </li>
+                  </ul>
+                </div>
               </div>
+              <div class="aside-mobile">
+                <span class="aside-mobile__name">Мой аккаунт</span>
+                <ul class="aside-mobile__list">
+                  <li class="aside-mobile__item">
+                    <a class="aside-mobile__link active" href="#">
+                      <svg>
+                        <use xlink:href="img/sprite.svg#user-fill"></use>
+                      </svg>
+                      Избранные
+                    </a>
+                  </li>
+                  <li class="aside-mobile__item">
+                    <a class="aside-mobile__link" href="#">
+                      <svg>
+                        <use xlink:href="img/sprite.svg#tarif"></use>
+                      </svg>
+                      Тариф и платежи
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="grid__right">
+                <section class="download">
+  <h1 class="download__title">Загрузите свои файлы</h1>
+
+  <form class="download__form form-download">
+    <div class="form-download__drag file-drop-area">
+      <span class="file-msg">Перетащите сюда файлы или нажмите на ĸнопĸу</span>
+      <span class="fake-btn"> «Загрузить файлы» </span>
+      <span class="file-msg-text"> </span>
+      <input class="file-input" type="file" multiple />
+    </div>
+
+    <div class="form-download__wrapper">
+      <div class="form-download__left">
+        <div class="form-download__list">
+          <div class="download-item">
+            <img
+              class="download-item__img"
+              src="img/download-item-img.jpg"
+              alt="img"
+            />
+
+            <div class="download-item__line">
+              <p class="download-item__percent">68%</p>
+              <span class="download-item__line-fill"></span>
             </div>
-          </li>
-        </ul>
-      </div>
 
-      <div class="photo__accordions">
-        <div class="filter-accordion accordion">
-          <button
-            class="filter-accordion__control accordion-control-btn"
-            type="button"
-          >
-            Соотношение сторон
+            <div class="download-item__right">
+              <img
+                class="download-item__icon"
+                src="img/loading.png"
+                alt="loading"
+              />
 
-            <svg>
-              <use xlink:href="img/sprite.svg#chevron"></use>
-            </svg>
-          </button>
+              <span class="download-item__text">Загрузка файла</span>
+            </div>
+          </div>
+          <div class="download-item full">
+            <img
+              class="download-item__img"
+              src="img/download-item-img-good.jpg"
+              alt="img"
+            />
 
-          <div class="filter-accordion__content accordion-content">
-            <div class="filter-accordion__inner">
-              <label class="checkbox">
-                <input
-                  class="checkbox__input"
-                  type="radio"
-                  name="соотношение"
-                  checked
-                />
-                <span class="checkbox__box"></span>
-                <span class="checkbox__text"> Горизонтальные </span>
-              </label>
-              <label class="checkbox">
-                <input
-                  class="checkbox__input"
-                  type="radio"
-                  name="соотношение"
-                />
-                <span class="checkbox__box"></span>
-                <span class="checkbox__text"> Вертикальные </span>
-              </label>
+            <div class="download-item__line">
+              <p class="download-item__percent">100%</p>
+              <span class="download-item__line-fill"></span>
+            </div>
+
+            <div class="download-item__right">
+              <svg class="download-item__icon loading-icon">
+                <use xlink:href="img/sprite.svg#check"></use>
+              </svg>
+
+              <span class="download-item__text">Файл загружен</span>
+            </div>
+          </div>
+          <div class="download-item error">
+            <img
+              class="download-item__img"
+              src="img/download-item-img.jpg"
+              alt="img"
+            />
+
+            <div class="download-item__line">
+              <p class="download-item__percent">68%</p>
+              <span class="download-item__line-fill"></span>
+            </div>
+
+            <div class="download-item__right">
+              <svg class="download-item__icon">
+                <use xlink:href="img/sprite.svg#close"></use>
+              </svg>
+
+              <span class="download-item__text">Ошибка загрузки</span>
+            </div>
+          </div>
+          <div class="download-item">
+            <img
+              class="download-item__img"
+              src="img/download-item-img.jpg"
+              alt="img"
+            />
+            <div class="download-item__line">
+              <p class="download-item__percent">68%</p>
+              <span class="download-item__line-fill"></span>
+            </div>
+
+            <div class="download-item__right">
+              <img
+                class="download-item__icon"
+                src="img/loading.png"
+                alt="loading"
+              />
+              <span class="download-item__text">Загрузка файла</span>
             </div>
           </div>
         </div>
+        <div class="form-download__arrow-down">
+          Теперь нам нужно проверить ваши файлы, <br />
+          для этого нажмите ĸнопĸу
+          <img src="img/arrow-down.png" alt="img" />
+        </div>
+        <button class="form-download__btn btn btn-shadow" type="submit">
+          Отправить файлы
+        </button>
       </div>
+      <div class="form-download__right">
+        <div class="form-download__group">
+          <label class="form-download__label">Название файла</label>
+          <input
+            class="form-download__input"
+            type="text"
+            placeholder="Введите название файла"
+          />
+        </div>
+        <div class="form-download__group">
+          <label class="form-download__label">Описание</label>
+          <textarea
+            class="form-download__input form-download__input--textarea"
+            placeholder="Введите описание файла"
+          ></textarea>
+        </div>
+        <div class="form-download__group">
+          <label class="form-download__label">Ключевые слова</label>
+          <input
+            class="form-download__input"
+            type="text"
+            placeholder="Начните вводить ключевые слова
+            через запятую"
+          />
+        </div>
 
-      <ul class="photo__list">
-        <li class="photo-item">
-          <picture>
-            <source srcset="img/video/1.webp" type="image/webp" />
-            <img class="photo-item__img" src="img/video/1.jpg" alt="video" />
-          </picture>
-        </li>
-        <li class="photo-item">
-          <picture>
-            <source srcset="img/video/2.webp" type="image/webp" />
-            <img class="photo-item__img" src="img/video/2.jpg" alt="video" />
-          </picture>
-        </li>
-        <li class="photo-item">
-          <picture>
-            <source srcset="img/video/3.webp" type="image/webp" />
-            <img class="photo-item__img" src="img/video/3.jpg" alt="video" />
-          </picture>
-        </li>
-        <li class="photo-item">
-          <picture>
-            <source srcset="img/video/4.webp" type="image/webp" />
-            <img class="photo-item__img" src="img/video/4.jpg" alt="video" />
-          </picture>
-        </li>
-        <li class="photo-item">
-          <picture>
-            <source srcset="img/video/5.webp" type="image/webp" />
-            <img class="photo-item__img" src="img/video/5.jpg" alt="video" />
-          </picture>
-        </li>
-        <li class="photo-item">
-          <picture>
-            <source srcset="img/video/6.webp" type="image/webp" />
-            <img class="photo-item__img" src="img/video/6.jpg" alt="video" />
-          </picture>
-        </li>
-        <li class="photo-item">
-          <picture>
-            <source srcset="img/video/7.webp" type="image/webp" />
-            <img class="photo-item__img" src="img/video/7.jpg" alt="video" />
-          </picture>
-        </li>
-        <li class="photo-item">
-          <picture>
-            <source srcset="img/video/8.webp" type="image/webp" />
-            <img class="photo-item__img" src="img/video/8.jpg" alt="video" />
-          </picture>
-        </li>
-        <li class="photo-item">
-          <picture>
-            <source srcset="img/video/1.webp" type="image/webp" />
-            <img class="photo-item__img" src="img/video/1.jpg" alt="video" />
-          </picture>
-        </li>
-        <li class="photo-item">
-          <picture>
-            <source srcset="img/video/2.webp" type="image/webp" />
-            <img class="photo-item__img" src="img/video/2.jpg" alt="video" />
-          </picture>
-        </li>
-        <li class="photo-item">
-          <picture>
-            <source srcset="img/video/3.webp" type="image/webp" />
-            <img class="photo-item__img" src="img/video/3.jpg" alt="video" />
-          </picture>
-        </li>
-        <li class="photo-item">
-          <picture>
-            <source srcset="img/video/4.webp" type="image/webp" />
-            <img class="photo-item__img" src="img/video/4.jpg" alt="video" />
-          </picture>
-        </li>
-        <li class="photo-item">
-          <picture>
-            <source srcset="img/video/5.webp" type="image/webp" />
-            <img class="photo-item__img" src="img/video/5.jpg" alt="video" />
-          </picture>
-        </li>
-        <li class="photo-item">
-          <picture>
-            <source srcset="img/video/6.webp" type="image/webp" />
-            <img class="photo-item__img" src="img/video/6.jpg" alt="video" />
-          </picture>
-        </li>
-        <li class="photo-item">
-          <picture>
-            <source srcset="img/video/7.webp" type="image/webp" />
-            <img class="photo-item__img" src="img/video/7.jpg" alt="video" />
-          </picture>
-        </li>
-        <li class="photo-item">
-          <picture>
-            <source srcset="img/video/8.webp" type="image/webp" />
-            <img class="photo-item__img" src="img/video/8.jpg" alt="video" />
-          </picture>
-        </li>
-        <li class="photo-item">
-          <picture>
-            <source srcset="img/video/1.webp" type="image/webp" />
-            <img class="photo-item__img" src="img/video/1.jpg" alt="video" />
-          </picture>
-        </li>
-        <li class="photo-item">
-          <picture>
-            <source srcset="img/video/2.webp" type="image/webp" />
-            <img class="photo-item__img" src="img/video/2.jpg" alt="video" />
-          </picture>
-        </li>
-        <li class="photo-item">
-          <picture>
-            <source srcset="img/video/3.webp" type="image/webp" />
-            <img class="photo-item__img" src="img/video/3.jpg" alt="video" />
-          </picture>
-        </li>
-        <li class="photo-item">
-          <picture>
-            <source srcset="img/video/4.webp" type="image/webp" />
-            <img class="photo-item__img" src="img/video/4.jpg" alt="video" />
-          </picture>
-        </li>
-        <li class="photo-item">
-          <picture>
-            <source srcset="img/video/5.webp" type="image/webp" />
-            <img class="photo-item__img" src="img/video/5.jpg" alt="video" />
-          </picture>
-        </li>
-        <li class="photo-item">
-          <picture>
-            <source srcset="img/video/6.webp" type="image/webp" />
-            <img class="photo-item__img" src="img/video/6.jpg" alt="video" />
-          </picture>
-        </li>
-        <li class="photo-item">
-          <picture>
-            <source srcset="img/video/7.webp" type="image/webp" />
-            <img class="photo-item__img" src="img/video/7.jpg" alt="video" />
-          </picture>
-        </li>
-        <li class="photo-item">
-          <picture>
-            <source srcset="img/video/8.webp" type="image/webp" />
-            <img class="photo-item__img" src="img/video/8.jpg" alt="video" />
-          </picture>
-        </li>
-        <li class="photo-item">
-          <picture>
-            <source srcset="img/video/1.webp" type="image/webp" />
-            <img class="photo-item__img" src="img/video/1.jpg" alt="video" />
-          </picture>
-        </li>
-        <li class="photo-item">
-          <picture>
-            <source srcset="img/video/2.webp" type="image/webp" />
-            <img class="photo-item__img" src="img/video/2.jpg" alt="video" />
-          </picture>
-        </li>
-        <li class="photo-item">
-          <picture>
-            <source srcset="img/video/3.webp" type="image/webp" />
-            <img class="photo-item__img" src="img/video/3.jpg" alt="video" />
-          </picture>
-        </li>
-        <li class="photo-item">
-          <picture>
-            <source srcset="img/video/4.webp" type="image/webp" />
-            <img class="photo-item__img" src="img/video/4.jpg" alt="video" />
-          </picture>
-        </li>
-        <li class="photo-item">
-          <picture>
-            <source srcset="img/video/5.webp" type="image/webp" />
-            <img class="photo-item__img" src="img/video/5.jpg" alt="video" />
-          </picture>
-        </li>
-        <li class="photo-item">
-          <picture>
-            <source srcset="img/video/6.webp" type="image/webp" />
-            <img class="photo-item__img" src="img/video/6.jpg" alt="video" />
-          </picture>
-        </li>
-        <li class="photo-item">
-          <picture>
-            <source srcset="img/video/7.webp" type="image/webp" />
-            <img class="photo-item__img" src="img/video/7.jpg" alt="video" />
-          </picture>
-        </li>
-        <li class="photo-item">
-          <picture>
-            <source srcset="img/video/8.webp" type="image/webp" />
-            <img class="photo-item__img" src="img/video/8.jpg" alt="video" />
-          </picture>
-        </li>
-      </ul>
-
-      <ul class="pagination">
-        <li class="pagination__item">
-          <button class="pagination__btn pagination__btn--prev">
-            <svg>
-              <use xlink:href="img/sprite.svg#chevron"></use>
-            </svg>
-            Назад
-          </button>
-        </li>
-        <li class="pagination__item">
-          <button class="pagination__btn active">1</button>
-        </li>
-        <li class="pagination__item">
-          <button class="pagination__btn">2</button>
-        </li>
-        <li class="pagination__item">
-          <button class="pagination__btn">3</button>
-        </li>
-        <li class="pagination__item">
-          <button class="pagination__btn">4</button>
-        </li>
-        <li class="pagination__item">
-          <button class="pagination__btn">5</button>
-        </li>
-        <li class="pagination__item">
-          <button class="pagination__btn pagination__btn--next">
-            Далее
-            <svg>
-              <use xlink:href="img/sprite.svg#chevron"></use>
-            </svg>
-          </button>
-        </li>
-      </ul>
+        <button
+          class="form-download__btn btn btn--border btn-save"
+          type="button"
+        >
+          Сохранить
+        </button>
+      </div>
     </div>
-  </div>
+  </form>
 </section>
 
+              </div>
+            </div>
+          </div>
+        </div>
       </main>
 
-      <footer class="footer">
+      <footer class="footer footer--account">
   <div class="container">
     <div class="footer__wrapper">
       <div class="footer__left">

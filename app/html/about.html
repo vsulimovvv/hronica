@@ -11,7 +11,12 @@
     <div class="site-wrapper">
       @include('./components/_header.html')
 
-      <main class="main">@include('./components/_about.html')</main>
+      <main class="main mt-0">
+        @include('./components/_about-descr.html')
+        @include('./components/_about-prof.html')
+        @include('./components/_about.html')
+        @include('./components/_about-join.html')
+      </main>
 
       @include('./components/_footer.html')
     </div>

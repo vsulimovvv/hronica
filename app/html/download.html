@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    @include('./components/base/_meta.html')
+    @include('./components/base/_links.html')
+  </head>
+
+  <body>
+    @include('./components/_popups.html')
+
+    <div class="site-wrapper">
+      @include('./components/_header-account.html')
+
+      <main class="main mt-0">
+        <div class="grid">
+          <div class="container">
+            <div class="grid__inner">
+              <div class="grid__aside aside">
+                <div class="aside__inner">
+                  <span class="aside__name">Мой аккаунт</span>
+                  <ul class="aside__list">
+                    <li class="aside__item">
+                      <a class="aside__link active" href="#">
+                        <svg>
+                          <use xlink:href="img/sprite.svg#user-fill"></use>
+                        </svg>
+                        Избранные
+                      </a>
+                    </li>
+                    <li class="aside__item">
+                      <a class="aside__link" href="#">
+                        <svg>
+                          <use xlink:href="img/sprite.svg#tarif"></use>
+                        </svg>
+                        Тариф и платежи
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="aside-mobile">
+                <span class="aside-mobile__name">Мой аккаунт</span>
+                <ul class="aside-mobile__list">
+                  <li class="aside-mobile__item">
+                    <a class="aside-mobile__link active" href="#">
+                      <svg>
+                        <use xlink:href="img/sprite.svg#user-fill"></use>
+                      </svg>
+                      Избранные
+                    </a>
+                  </li>
+                  <li class="aside-mobile__item">
+                    <a class="aside-mobile__link" href="#">
+                      <svg>
+                        <use xlink:href="img/sprite.svg#tarif"></use>
+                      </svg>
+                      Тариф и платежи
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="grid__right">
+                @include('./components/_download.html')
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      @include('./components/_footer-account.html')
+    </div>
+
+    @include('./components/base/_scripts.html')
+  </body>
+</html>

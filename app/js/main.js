@@ -5,6 +5,53 @@ window.addEventListener('DOMContentLoaded', () => {
   // * ===== Nice Select
   $('select').niceSelect();
 
+  // * ===== Load Form
+  (function loadForm() {
+    var $fileInput = $('.file-input');
+    var $droparea = $('.file-drop-area');
+
+    // highlight drag area
+    $fileInput.on('dragenter focus click', function () {
+      $droparea.addClass('is-active');
+    });
+
+    // back to normal state
+    $fileInput.on('dragleave blur drop', function () {
+      $droparea.removeClass('is-active');
+    });
+
+    // change inner text
+    $fileInput.on('change', function () {
+      var filesCount = $(this)[0].files.length;
+      var $textContainer = $(this).prev();
+
+      if (filesCount === 1) {
+        var fileName = $(this).val().split('\\').pop();
+        $textContainer.text(fileName);
+      } else {
+        $textContainer.text('Выбрано: ' + filesCount);
+      }
+    });
+
+    // let inputs = document.querySelectorAll('.input-file-upload');
+    // Array.prototype.forEach.call(inputs, function (input) {
+    //   let label = input.previousElementSibling,
+    //     labelVal = label.querySelector('.custom-file-upload span').innerText;
+
+    //   input.addEventListener('change', function (e) {
+    //     let countFiles = '';
+    //     if (this.files && this.files.length >= 1)
+    //       countFiles = this.files.length;
+
+    //     if (countFiles)
+    //       label.querySelector('.custom-file-upload span').innerText =
+    //         'Выбрано файлов: ' + countFiles;
+    //     else
+    //       label.querySelector('.custom-file-upload span').innerText = labelVal;
+    //   });
+    // });
+  })();
+
   // * ===== Accordion
   const toggleAccordion = (accordionControl, accordionContent, accordion) => {
     const filters = document.querySelectorAll(accordionControl);

@@ -1,0 +1,142 @@
+<section class="download">
+  <h1 class="download__title">Загрузите свои файлы</h1>
+
+  <form class="download__form form-download">
+    <div class="form-download__drag file-drop-area">
+      <span class="file-msg">Перетащите сюда файлы или нажмите на ĸнопĸу</span>
+      <span class="fake-btn"> «Загрузить файлы» </span>
+      <span class="file-msg-text"> </span>
+      <input class="file-input" type="file" multiple />
+    </div>
+
+    <div class="form-download__wrapper">
+      <div class="form-download__left">
+        <div class="form-download__list">
+          <div class="download-item">
+            <img
+              class="download-item__img"
+              src="img/download-item-img.jpg"
+              alt="img"
+            />
+
+            <div class="download-item__line">
+              <p class="download-item__percent">68%</p>
+              <span class="download-item__line-fill"></span>
+            </div>
+
+            <div class="download-item__right">
+              <img
+                class="download-item__icon"
+                src="img/loading.png"
+                alt="loading"
+              />
+
+              <span class="download-item__text">Загрузка файла</span>
+            </div>
+          </div>
+          <div class="download-item full">
+            <img
+              class="download-item__img"
+              src="img/download-item-img-good.jpg"
+              alt="img"
+            />
+
+            <div class="download-item__line">
+              <p class="download-item__percent">100%</p>
+              <span class="download-item__line-fill"></span>
+            </div>
+
+            <div class="download-item__right">
+              <svg class="download-item__icon loading-icon">
+                <use xlink:href="img/sprite.svg#check"></use>
+              </svg>
+
+              <span class="download-item__text">Файл загружен</span>
+            </div>
+          </div>
+          <div class="download-item error">
+            <img
+              class="download-item__img"
+              src="img/download-item-img.jpg"
+              alt="img"
+            />
+
+            <div class="download-item__line">
+              <p class="download-item__percent">68%</p>
+              <span class="download-item__line-fill"></span>
+            </div>
+
+            <div class="download-item__right">
+              <svg class="download-item__icon">
+                <use xlink:href="img/sprite.svg#close"></use>
+              </svg>
+
+              <span class="download-item__text">Ошибка загрузки</span>
+            </div>
+          </div>
+          <div class="download-item">
+            <img
+              class="download-item__img"
+              src="img/download-item-img.jpg"
+              alt="img"
+            />
+            <div class="download-item__line">
+              <p class="download-item__percent">68%</p>
+              <span class="download-item__line-fill"></span>
+            </div>
+
+            <div class="download-item__right">
+              <img
+                class="download-item__icon"
+                src="img/loading.png"
+                alt="loading"
+              />
+              <span class="download-item__text">Загрузка файла</span>
+            </div>
+          </div>
+        </div>
+        <div class="form-download__arrow-down">
+          Теперь нам нужно проверить ваши файлы, <br />
+          для этого нажмите ĸнопĸу
+          <img src="img/arrow-down.png" alt="img" />
+        </div>
+        <button class="form-download__btn btn btn-shadow" type="submit">
+          Отправить файлы
+        </button>
+      </div>
+      <div class="form-download__right">
+        <div class="form-download__group">
+          <label class="form-download__label">Название файла</label>
+          <input
+            class="form-download__input"
+            type="text"
+            placeholder="Введите название файла"
+          />
+        </div>
+        <div class="form-download__group">
+          <label class="form-download__label">Описание</label>
+          <textarea
+            class="form-download__input form-download__input--textarea"
+            placeholder="Введите описание файла"
+          ></textarea>
+        </div>
+        <div class="form-download__group">
+          <label class="form-download__label">Ключевые слова</label>
+          <input
+            class="form-download__input"
+            type="text"
+            placeholder="Начните вводить ключевые слова
+            через запятую"
+          />
+        </div>
+
+        <button
+          class="form-download__btn btn btn--border btn-save"
+          type="button"
+        >
+          Сохранить
+        </button>
+      </div>
+    </div>
+  </form>
+</section>
