@@ -2,6 +2,13 @@ window.addEventListener('DOMContentLoaded', () => {
   // * ===== Mask input
   // $('input[type="tel"]').mask('+7 (999) 999-99-99');
 
+
+  // $('.mosaic').masonry({
+  //   // options...
+  //   itemSelector: '.mosaic-item',
+  //   columnWidth: 200
+  // });
+
   // * ===== Nice Select
   $('select').niceSelect();
 
