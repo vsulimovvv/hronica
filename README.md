@@ -13,3 +13,4 @@
 Стать автором: https://vsulimovvv.github.io/hronica/app/author.html    
 Вопрос-ответ: https://vsulimovvv.github.io/hronica/app/faq.html    
 Тех поддержка: https://vsulimovvv.github.io/hronica/app/support.html    
+ЛК автора: https://vsulimovvv.github.io/hronica/app/download.html    
