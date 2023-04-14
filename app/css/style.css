@@ -400,6 +400,7 @@ picture {
       -ms-flex-align: center;
           align-items: center;
   font-size: 16px;
+  font-family: "Formular";
 }
 .btn:hover {
   background-color: transparent;
@@ -1808,7 +1809,7 @@ picture {
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
-  width: 390px;
+  width: max-content;
   margin: 0 auto;
 }
 @media (max-width: 767.98px) {
@@ -3755,6 +3756,17 @@ picture {
   text-align: center;
   padding-top: 190px;
   padding-bottom: 190px;
+}
+.subscribe .video {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100vw;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  position: absolute;
 }
 @media (max-width: 1300px) {
   .subscribe {
