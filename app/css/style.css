@@ -2379,6 +2379,9 @@ picture {
      object-fit: cover;
   border-radius: 50%;
 }
+.header .user-name {
+  font-size: 14px;
+}
 .header .form-search {
   max-width: 450px;
   width: 100%;
@@ -7173,7 +7176,6 @@ picture {
 .fake-btn {
   -ms-flex-negative: 0;
       flex-shrink: 0;
-  text-transform: uppercase;
   color: var(--color-accent);
   font-size: 20px;
   margin-top: 20px;
